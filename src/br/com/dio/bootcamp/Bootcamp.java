@@ -6,7 +6,7 @@ import java.util.*;
 public class Bootcamp {
     private String nome, descricao;
     private final LocalDate dataInicial = LocalDate.now(), dataFinal = LocalDate.now().plusDays(45);
-    private Set<Dev> dev = new HashSet<>();
+    private Set<Usuario> usuario = new HashSet<>();
     private Set<Conteudo> conteudo = new LinkedHashSet<>();
 
     public Bootcamp(String nome, String descricao) {
@@ -14,12 +14,12 @@ public class Bootcamp {
         this.descricao = descricao;
     }
 
-    public Set<Dev> getDev() {
-        return dev;
+    public Set<Usuario> getDev() {
+        return usuario;
     }
 
-    public void setDev(Set<Dev> dev) {
-        this.dev = dev;
+    public void setDev(Set<Usuario> usuario) {
+        this.usuario = usuario;
     }
 
     public Set<Conteudo> getConteudo() {

@@ -5,12 +5,12 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
-public class Dev {
+public class Usuario {
     private String nome;
     private Set<Conteudo> conteudoInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudoConcluidos = new LinkedHashSet<>();
 
-    public Dev(String nome) {
+    public Usuario(String nome) {
         this.nome = nome;
     }
 
@@ -41,8 +41,8 @@ public class Dev {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Dev dev = (Dev) o;
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudoInscritos, dev.conteudoInscritos) && Objects.equals(conteudoConcluidos, dev.conteudoConcluidos);
+        Usuario usuario = (Usuario) o;
+        return Objects.equals(nome, usuario.nome) && Objects.equals(conteudoInscritos, usuario.conteudoInscritos) && Objects.equals(conteudoConcluidos, usuario.conteudoConcluidos);
     }
 
     @Override
