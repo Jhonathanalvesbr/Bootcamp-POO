@@ -1,16 +1,13 @@
 package br.com.dio.bootcamp;
 
 import java.time.LocalDate;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Bootcamp {
     private String nome, descricao;
     private final LocalDate dataInicial = LocalDate.now(), dataFinal = LocalDate.now().plusDays(45);
     private Set<Dev> dev = new HashSet<>();
-    private Set<Conteudo>  conteudo = new LinkedHashMap<>();
+    private Set<Conteudo> conteudo = new LinkedHashSet<>();
 
     public Bootcamp(String nome, String descricao) {
         this.nome = nome;
